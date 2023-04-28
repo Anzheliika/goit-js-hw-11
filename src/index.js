@@ -28,6 +28,7 @@ function onSearch(event) {
 
   if (!picturesApiService.query) {
     Notify.failure('Please, enter your request.');
+    clearGallery();
     return;
   }
   showQuantity();
